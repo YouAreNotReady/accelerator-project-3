@@ -1,0 +1,38 @@
+.page {
+  position: relative;
+
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+.page__container {
+  box-sizing: content-box;
+
+  min-width: 290px;
+  max-width: 290px;
+
+  // @include mobile-tablet-width-padding;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 678px;
+    max-width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1240px;
+    max-width: 1240px;
+
+    // @include desktop-width-padding;
+  }
+}

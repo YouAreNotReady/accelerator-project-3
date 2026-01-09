@@ -1,0 +1,55 @@
+.cite-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 5px 5px 21px;
+
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $accent-color;
+
+
+  &::after {
+    content: "";
+
+    display: block;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+
+    background-color: $accent-color;
+
+    border-radius: 50%;
+
+    background-image: url('/__spritemap#sprite-arrow-view');
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover.cite-button::after {
+    transform: rotate(45deg)
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
+
+

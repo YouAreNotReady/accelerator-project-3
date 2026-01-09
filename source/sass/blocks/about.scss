@@ -1,0 +1,60 @@
+.about {
+  background-color: $background-color;
+}
+
+.about__upper {
+  display: grid;
+  padding: 50px 15px 0 15px;
+  margin-bottom: 40px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $accent-color;
+}
+
+.about__upper h3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #316DC2;
+}
+
+.about__upper p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #484848;
+}
+
+.about__title + p {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #484848;
+}
+
+.about__button {
+  width: 223px;
+}
+
+.about__facts-list {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: $accent-color;
+  border-radius: 20px;
+}
