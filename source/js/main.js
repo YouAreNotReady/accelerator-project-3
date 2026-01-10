@@ -4,6 +4,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import './modal.js';
+
 const heroSwiper = new Swiper('.hero__swiper', {
   modules: [Pagination, Keyboard, A11y],
   loop: true,

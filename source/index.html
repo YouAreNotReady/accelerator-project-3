@@ -15,6 +15,7 @@
         Меню
         <button class="main-header__nav-button" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
       </span>
+
     </header>
 
     <main class="main-container">
@@ -110,6 +111,46 @@
       footer
     </footer>
 
+    <div class="modal-overlay" hidden>
+      <div class="modal" aria-modal="true">
+        <button class="modal__close" aria-label="Закрыть окно" type="button"></button>
+
+        <h2 class="modal__title">Напишите нам</h2>
+        <p class="modal__subtitle">
+          Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы — мы на них ответим!
+        </p>
+
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal__label">
+            Имя
+            <input class="modal__input" type="text" name="name" required/>
+          </label>
+
+          <label class="modal__label">
+            Телефон
+            <input class="modal__input" type="tel" name="phone" required/>
+          </label>
+
+          <label class="modal__label">
+            Выберите город
+            <select class="modal__input modal__select" name="city" required>
+              <option value="" selected disabled></option>
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+              <option>Новосибирск</option>
+            </select>
+          </label>
+
+          <label class="modal__checkbox">
+            <input class="visually-hidden modal__control-input" type="checkbox" name="agreement" required>
+            <span class="modal__control-mark"></span>
+            <span class="modal__checkbox-text">Я согласен на обработку моих персональных данных</span>
+          </label>
+
+          <button class="modal__submit cite-button" type="submit"><span class="modal__submit-text">Отправить</span></button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 
