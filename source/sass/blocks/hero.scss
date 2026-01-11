@@ -164,7 +164,7 @@
 }
 
 .hero__swiper-content {
-  padding: 229px 15px 20px;
+  padding: 231px 15px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 687px 64px 60px 45px;
@@ -176,7 +176,7 @@
 }
 
 .hero .hero__swiper-pagination.swiper-pagination {
-  top: 201px;
+  top: 203px;
   bottom: unset;
   left: 15px;
 
@@ -310,6 +310,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
+
     width: 775px;
     padding: 0 50px 35px 50px;
   }

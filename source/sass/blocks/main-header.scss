@@ -15,6 +15,8 @@
   padding-right: 15px;
 
   @media (min-width: $tablet-width) {
+    min-height: 56px;
+
     margin-top: 30px;
     padding-left: 45px;
     padding-right: 45px;
@@ -31,7 +33,7 @@
   width: 52px;
   height: 52px;
   min-width: 52px;
-    min-height: 52px;
+  min-height: 52px;
 
   flex-shrink: 0;
 }
