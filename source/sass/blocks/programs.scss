@@ -1,0 +1,504 @@
+.programs {
+  position: relative;
+
+  padding: 55px 15px 50px;
+
+  background-color: $background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 0 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px 70px 100px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 0;
+    margin-bottom: 40px;
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.programs__swiper {
+  position: relative;
+
+  --swiper-pagination-progressbar-bg-color: rgb(49, 109, 194, 0.2);
+  --swiper-pagination-progressbar-size: 2px;
+}
+
+.programs__swiper-wrapper {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.swiper-slide.programs__swiper-slide {
+  position: relative;
+
+  width: 290px;
+  min-height: 400px;
+  height: auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 12px;
+
+    background-color: rgb(49, 109, 194, 0.2);
+  }
+
+  &--internships {
+    background-image:
+      image-set(
+        url("../../img/programs/programs-1-mobile@1x.webp") type("image/webp"),
+        url("../../img/programs/programs-1-mobile@1x.jpg") type("image/jpg")
+      );
+  }
+
+  &--volunteer {
+    background-image:
+      image-set(
+        url("../../img/programs/programs-2-mobile@1x.webp") type("image/webp"),
+        url("../../img/programs/programs-2-mobile@1x.jpg") type("image/jpg")
+      );
+  }
+
+  &--study {
+    background-image:
+      image-set(
+        url("../../img/programs/programs-3-mobile@1x.webp") type("image/webp"),
+        url("../../img/programs/programs-3-mobile@1x.jpg") type("image/jpg")
+      );
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 420px;
+
+    &--internships {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-1-tablet@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-1-tablet@1x.jpg") type("image/jpg")
+        );
+    }
+
+    &--volunteer {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-2-tablet@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-2-tablet@1x.jpg") type("image/jpg")
+        );
+    }
+
+    &--study {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-3-tablet@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-3-tablet@1x.jpg") type("image/jpg")
+        );
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 420px;
+
+    &--internships {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-1-desktop@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-1-desktop@1x.jpg") type("image/jpg")
+        );
+    }
+
+    &--volunteer {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-2-desktop@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-2-desktop@1x.jpg") type("image/jpg")
+        );
+    }
+
+    &--study {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-3-desktop@1x.webp") type("image/webp"),
+          url("../../img/programs/programs-3-desktop@1x.jpg") type("image/jpg")
+        );
+    }
+  }
+}
+
+@media only screen and (resolution >= 2dppx) {
+  .swiper-slide.programs__swiper-slide {
+    &--internships {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-1-mobile@2x.webp") type("image/webp"),
+          url("../../img/programs/programs-1-mobile@2x.jpg") type("image/jpg")
+        );
+    }
+
+    &--volunteer {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-2-mobile@2x.webp") type("image/webp"),
+          url("../../img/programs/programs-2-mobile@2x.jpg") type("image/jpg")
+        );
+    }
+
+    &--study {
+      background-image:
+        image-set(
+          url("../../img/programs/programs-3-mobile@2x.webp") type("image/webp"),
+          url("../../img/programs/programs-3-mobile@2x.jpg") type("image/jpg")
+        );
+    }
+
+    @media (min-width: $tablet-width) {
+      &--internships {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-1-tablet@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-1-tablet@2x.jpg") type("image/jpg")
+          );
+      }
+
+      &--volunteer {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-2-tablet@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-2-tablet@2x.jpg") type("image/jpg")
+          );
+      }
+
+      &--study {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-3-tablet@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-3-tablet@2x.jpg") type("image/jpg")
+          );
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &--internships {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-1-desktop@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-1-desktop@2x.jpg") type("image/jpg")
+          );
+      }
+
+      &--volunteer {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-2-desktop@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-2-desktop@2x.jpg") type("image/jpg")
+          );
+      }
+
+      &--study {
+        background-image:
+          image-set(
+            url("../../img/programs/programs-3-desktop@2x.webp") type("image/webp"),
+            url("../../img/programs/programs-3-desktop@2x.jpg") type("image/jpg")
+          );
+      }
+    }
+  }
+}
+
+.programs__swiper-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 18px;
+  left: 10px;
+
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 10px;
+    left: 20px;
+
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 17px;
+
+    width: 321px;
+  }
+}
+
+.programs__swiper-title {
+  position: relative;
+
+  width: 146px;
+  margin: 0;
+  padding: 18px 35px 6px 18px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $accent-color;
+
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    right: -18px;
+    bottom: 0;
+
+    background: #ffffff;
+
+    mask-image:
+      radial-gradient(
+        circle 18px at 100% 0,
+        transparent 17.5px,
+        #ffffff 18px
+      );
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    padding-right: 38px;
+
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 194px;
+    padding-right: 36px;
+
+    font-size: 24px;
+    line-height: 17px;
+  }
+}
+
+.programs__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 18px 15px;
+
+  background: #ffffff;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+
+  @media (min-width: $desktop-width) {
+    min-height: 81px;
+  }
+}
+
+.programs__content-bottom p {
+  width: 188px;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: $default-text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 196px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+
+    line-height: 18px;
+  }
+}
+
+.programs__link {
+  position: relative;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-color: $accent-color;
+  border-radius: 50%;
+
+  transition: all 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-size: 8px 8px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+  }
+
+  &:hover.programs__link::before {
+    background-color: $accent-color;
+    transform: rotate(45deg);
+  }
+
+  &:active.programs__link::before {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible.programs__link::before {
+    transform: rotate(45deg);
+  }
+
+  &--disabled {
+    background-color: #a9adb7;
+
+    pointer-events: none;
+  }
+
+  &--disabled.cite-button::before {
+    opacity: 0.6;
+  }
+}
+
+.programs__navigation-wrapper {
+  --swiper-navigation-size: 22px;
+  --swiper-navigation-sides-offset: 0px;
+
+  position: absolute;
+  top: 54px;
+  right: 15px;
+
+  display: block;
+  width: 52px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: unset;
+    right: 45px;
+    bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 60px;
+    right: 100px;
+  }
+}
+
+.programs__swiper-button {
+  padding: 6px;
+
+  background: transparent;
+  border: none;
+}
+
+.programs__swiper-button-arrow {
+  color: $accent-color;
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  transform: rotate(45deg);
+
+  &--prev {
+    transform: rotate(-135deg);
+  }
+}
+
+.programs .programs__swiper-pagination.swiper-pagination {
+  --swiper-pagination-progressbar-size: 2px;
+
+  position: absolute;
+  top: unset;
+  bottom: 60px;
+  left: 45px;
+
+  width: 562px;
+
+  @media (min-width: $desktop-width) {
+    bottom: 70px;
+    left: 100px;
+
+    width: 1136px;
+  }
+}
+
+.programs__button {
+  width: 205px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+
+    width: 234px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 62px;
+    right: 100px;
+
+    padding-left: 30px;
+  }
+}
+
+.programs__desktop-slides {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

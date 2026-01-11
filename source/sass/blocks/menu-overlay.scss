@@ -1,8 +1,8 @@
 .menu-overlay {
   position: fixed;
+  z-index: 10;
   inset: 0;
-  background: rgba(13, 29, 51, 0.4);
-  z-index: 2;
+  background: rgb(13, 29, 51, 0.4);
 }
 
 .modal-overlay[hidden] {

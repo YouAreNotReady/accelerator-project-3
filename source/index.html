@@ -3,14 +3,18 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship</title>
+    <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page__body">
     <header class="main-header">
-      <svg class="main-header__logo" width="52" height="52" aria-label="Логотип">
+      <svg class="main-header__logo" width="52" height="52" role="img" aria-label="Логотип">
         <use href="/__spritemap#sprite-logotype"></use>
       </svg>
 
@@ -134,23 +138,129 @@
         </ul>
       </section>
 
-      <div data-test="programs">programs</div>
-      <div data-test="grant">grant</div>
-      <div data-test="news">news</div>
-      <div data-test="FAQ">FAQ</div>
-      <div data-test="reviews">reviews</div>
-      <div data-test="contacts">contacts</div>
-      <div data-test="form">form</div>
+      <section class="programs" data-test="programs">
+        <h2 class="programs__title">Программы</h2>
+
+        <div class="programs__navigation-wrapper">
+          <button class="programs__swiper-button programs__swiper-button--prev swiper-button-prev" type="button">
+            <span class="visually-hidden">Прошлый слайд</span>
+            <svg class="programs__swiper-button-arrow programs__swiper-button-arrow--prev" width="10" height="10" viewBox="0 0 8 8"><use href="/__spritemap#sprite-arrow"></use></svg>
+          </button>
+
+          <button class="programs__swiper-button programs__swiper-button--next swiper-button-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg class="programs__swiper-button-arrow" width="10" height="10" viewBox="0 0 8 8"><use href="/__spritemap#sprite-arrow"></use></svg>
+          </button>
+        </div>
+
+        <div class="programs__swiper-pagination swiper-pagination"></div>
+
+        <div class="programs__swiper swiper">
+          <div class="programs__swiper-wrapper swiper-wrapper">
+            <div class="programs__swiper-slide programs__swiper-slide--internships swiper-slide">
+              <div class="programs__swiper-content">
+                <h3 class="programs__swiper-title">Стажировки</h3>
+                <div class="programs__content-bottom">
+                  <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                  <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs__swiper-slide programs__swiper-slide--volunteer swiper-slide">
+              <div class="programs__swiper-content">
+                <h3 class="programs__swiper-title">Волонтёрство</h3>
+                <div class="programs__content-bottom">
+                  <p>Помогайте другим и развивайте свои лидерские качества</p>
+                  <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs__swiper-slide programs__swiper-slide--study swiper-slide">
+              <div class="programs__swiper-content">
+                <h3 class="programs__swiper-title">Учёба</h3>
+                <div class="programs__content-bottom">
+                  <p>Получите образование и измените своё будущее.</p>
+                  <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+              <div class="programs__swiper-slide programs__swiper-slide--internships swiper-slide">
+                <div class="programs__swiper-content">
+                  <h3 class="programs__swiper-title">Стажировки</h3>
+                  <div class="programs__content-bottom">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="programs__swiper-slide programs__swiper-slide--volunteer swiper-slide">
+                <div class="programs__swiper-content">
+                  <h3 class="programs__swiper-title">Волонтёрство</h3>
+                  <div class="programs__content-bottom">
+                    <p>Помогайте другим и развивайте свои лидерские качества</p>
+                    <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="programs__swiper-slide programs__swiper-slide--study swiper-slide">
+                <div class="programs__swiper-content">
+                  <h3 class="programs__swiper-title">Учёба</h3>
+                  <div class="programs__content-bottom">
+                    <p>Получите образование и измените своё будущее.</p>
+                    <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="programs__swiper-slide programs__swiper-slide--internships swiper-slide">
+                <div class="programs__swiper-content">
+                  <h3 class="programs__swiper-title">Стажировки</h3>
+                  <div class="programs__content-bottom">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="programs__swiper-slide programs__swiper-slide--volunteer swiper-slide">
+              <div class="programs__swiper-content">
+                <h3 class="programs__swiper-title">Волонтёрство</h3>
+                <div class="programs__content-bottom">
+                  <p>Помогайте другим и развивайте свои лидерские качества</p>
+                  <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="programs__swiper-slide programs__swiper-slide--study swiper-slide">
+              <div class="programs__swiper-content">
+                <h3 class="programs__swiper-title">Учёба</h3>
+                <div class="programs__content-bottom">
+                  <p>Получите образование и измените своё будущее.</p>
+                  <a class="programs__link" href="#"><span class="visually-hidden">Подробнее</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="programs__swiper-scrollbar swiper-scrollbar"></div>
+        </div>
+
+        <a class="programs__button cite-button" href="#">Все программы</a>
+      </section>
     </main>
 
     <footer class="main-footer" data-test="footer">
-      footer
     </footer>
 
     <div class="menu-overlay" hidden></div>
 
     <div class="modal-overlay" hidden>
-      <div class="modal" aria-modal="true">
+      <div class="modal" aria-modal="true" role="dialog">
         <button class="modal__close" aria-label="Закрыть окно" type="button"></button>
 
         <h2 class="modal__title">Напишите нам</h2>
@@ -161,23 +271,23 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal__label">
             Имя
-            <input class="modal__input" type="text" name="name" required/>
+            <input class="modal__input" type="text" name="name" required>
           </label>
 
           <label class="modal__label">
             Телефон
-            <input class="modal__input" type="tel" name="phone" required/>
+            <input class="modal__input" type="tel" name="phone" required>
           </label>
 
-          <label class="modal__label">
+          <div class="modal__label">
             Выберите город
             <select class="modal__input modal__select" name="city" required>
-              <option value="" selected disabled></option>
-              <option>Москва</option>
-              <option>Санкт-Петербург</option>
-              <option>Новосибирск</option>
+              <option value="" selected disabled label="Выберите город"></option>
+              <option value="Moscow">Москва</option>
+              <option value="StPetersburg">Санкт-Петербург</option>
+              <option value="Novosibirsk">Новосибирск</option>
             </select>
-          </label>
+          </div>
 
           <label class="modal__checkbox">
             <input class="visually-hidden modal__control-input" type="checkbox" name="agreement" required>
@@ -191,5 +301,4 @@
     </div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

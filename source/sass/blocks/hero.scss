@@ -19,49 +19,54 @@
   background-color: #ffffff;
 
   &--experience {
-    background-image: image-set(
-      url('../../img/hero/hero-1-mobile@1x.webp') type('image/webp'),
-      url('../../img/hero/hero-1-mobile@1x.jpg') type('image/jpg')
-    );
-
+    background-image:
+      image-set(
+        url("../../img/hero/hero-1-mobile@1x.webp") type("image/webp"),
+        url("../../img/hero/hero-1-mobile@1x.jpg") type("image/jpg")
+      );
   }
 
   &--volunteer {
-    background-image: image-set(
-      url('../../img/hero/hero-2-mobile@1x.webp') type('image/webp'),
-      url('../../img/hero/hero-2-mobile@1x.jpg') type('image/jpg')
-    );
+    background-image:
+      image-set(
+        url("../../img/hero/hero-2-mobile@1x.webp") type("image/webp"),
+        url("../../img/hero/hero-2-mobile@1x.jpg") type("image/jpg")
+      );
   }
 
   &--programs {
-    background-image: image-set(
-      url('../../img/hero/hero-3-mobile@1x.webp') type('image/webp'),
-      url('../../img/hero/hero-3-mobile@1x.jpg') type('image/jpg')
-    );;
+    background-image:
+      image-set(
+        url("../../img/hero/hero-3-mobile@1x.webp") type("image/webp"),
+        url("../../img/hero/hero-3-mobile@1x.jpg") type("image/jpg")
+      );
   }
 
   @media (min-width: $tablet-width) {
     min-height: 1024px;
 
     &--experience {
-      background-image: image-set(
-        url('../../img/hero/hero-1-tablet@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-1-tablet@1x.jpg') type('image/jpg')
-      );
+      background-image:
+        image-set(
+          url("../../img/hero/hero-1-tablet@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-1-tablet@1x.jpg") type("image/jpg")
+        );
     }
 
     &--volunteer {
-      background-image: image-set(
-        url('../../img/hero/hero-2-tablet@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-2-tablet@1x.jpg') type('image/jpg')
-      );
+      background-image:
+        image-set(
+          url("../../img/hero/hero-2-tablet@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-2-tablet@1x.jpg") type("image/jpg")
+        );
     }
 
     &--programs {
-      background-image: image-set(
-        url('../../img/hero/hero-3-tablet@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-3-tablet@1x.jpg') type('image/jpg')
-      );;
+      background-image:
+        image-set(
+          url("../../img/hero/hero-3-tablet@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-3-tablet@1x.jpg") type("image/jpg")
+        );
     }
   }
 
@@ -69,95 +74,106 @@
     min-height: 800px;
 
     &--experience {
-      background-image: image-set(
-        url('../../img/hero/hero-1-desktop@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-1-desktop@1x.jpg') type('image/jpg')
-      );
+      background-image:
+        image-set(
+          url("../../img/hero/hero-1-desktop@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-1-desktop@1x.jpg") type("image/jpg")
+        );
     }
 
     &--volunteer {
-      background-image: image-set(
-        url('../../img/hero/hero-2-desktop@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-2-desktop@1x.jpg') type('image/jpg')
-      );
+      background-image:
+        image-set(
+          url("../../img/hero/hero-2-desktop@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-2-desktop@1x.jpg") type("image/jpg")
+        );
     }
 
     &--programs {
-      background-image: image-set(
-        url('../../img/hero/hero-3-desktop@1x.webp') type('image/webp'),
-        url('../../img/hero/hero-3-desktop@1x.jpg') type('image/jpg')
-      );;
+      background-image:
+        image-set(
+          url("../../img/hero/hero-3-desktop@1x.webp") type("image/webp"),
+          url("../../img/hero/hero-3-desktop@1x.jpg") type("image/jpg")
+        );
     }
   }
 }
 
-@media only screen and (min-resolution: 2dppx) {
+@media only screen and (resolution >= 2dppx) {
   .swiper-slide.hero__swiper-slide {
     &--experience {
-      background-image: image-set(
-        url('../../img/hero/hero-1-mobile@2x.webp') type('image/webp'),
-        url('../../img/hero/hero-1-mobile@2x.jpg') type('image/jpg')
-      );
-
+      background-image:
+        image-set(
+          url("../../img/hero/hero-1-mobile@2x.webp") type("image/webp"),
+          url("../../img/hero/hero-1-mobile@2x.jpg") type("image/jpg")
+        );
     }
 
     &--volunteer {
-      background-image: image-set(
-        url('../../img/hero/hero-2-mobile@2x.webp') type('image/webp'),
-        url('../../img/hero/hero-2-mobile@2x.jpg') type('image/jpg')
-      );
+      background-image:
+        image-set(
+          url("../../img/hero/hero-2-mobile@2x.webp") type("image/webp"),
+          url("../../img/hero/hero-2-mobile@2x.jpg") type("image/jpg")
+        );
     }
 
     &--programs {
-      background-image: image-set(
-        url('../../img/hero/hero-3-mobile@2x.webp') type('image/webp'),
-        url('../../img/hero/hero-3-mobile@2x.jpg') type('image/jpg')
-      );;
+      background-image:
+        image-set(
+          url("../../img/hero/hero-3-mobile@2x.webp") type("image/webp"),
+          url("../../img/hero/hero-3-mobile@2x.jpg") type("image/jpg")
+        );
     }
 
     @media (min-width: $tablet-width) {
       &--experience {
-        background-image: image-set(
-          url('../../img/hero/hero-1-tablet@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-1-tablet@2x.jpg') type('image/jpg')
-        );
+        background-image:
+          image-set(
+            url("../../img/hero/hero-1-tablet@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-1-tablet@2x.jpg") type("image/jpg")
+          );
       }
 
       &--volunteer {
-        background-image: image-set(
-          url('../../img/hero/hero-2-tablet@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-2-tablet@2x.jpg') type('image/jpg')
-        );
+        background-image:
+          image-set(
+            url("../../img/hero/hero-2-tablet@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-2-tablet@2x.jpg") type("image/jpg")
+          );
       }
 
       &--programs {
-        background-image: image-set(
-          url('../../img/hero/hero-3-tablet@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-3-tablet@2x.jpg') type('image/jpg')
-        );;
+        background-image:
+          image-set(
+            url("../../img/hero/hero-3-tablet@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-3-tablet@2x.jpg") type("image/jpg")
+          );
       }
     }
 
     @media (min-width: $desktop-width) {
       &--experience {
-        background-image: image-set(
-          url('../../img/hero/hero-1-desktop@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-1-desktop@2x.jpg') type('image/jpg')
-        );
+        background-image:
+          image-set(
+            url("../../img/hero/hero-1-desktop@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-1-desktop@2x.jpg") type("image/jpg")
+          );
       }
 
       &--volunteer {
-        background-image: image-set(
-          url('../../img/hero/hero-2-desktop@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-2-desktop@2x.jpg') type('image/jpg')
-        );
+        background-image:
+          image-set(
+            url("../../img/hero/hero-2-desktop@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-2-desktop@2x.jpg") type("image/jpg")
+          );
       }
 
       &--programs {
-        background-image: image-set(
-          url('../../img/hero/hero-3-desktop@2x.webp') type('image/webp'),
-          url('../../img/hero/hero-3-desktop@2x.jpg') type('image/jpg')
-        );;
+        background-image:
+          image-set(
+            url("../../img/hero/hero-3-desktop@2x.webp") type("image/webp"),
+            url("../../img/hero/hero-3-desktop@2x.jpg") type("image/jpg")
+          );
       }
     }
   }
@@ -202,11 +218,12 @@
 
     background: #ffffff;
 
-    mask-image: radial-gradient(
-      circle 10px at 100% 0,
-      transparent 9.5px,
-      #ffffff 10px
-    );
+    mask-image:
+      radial-gradient(
+        circle 10px at 100% 0,
+        transparent 9.5px,
+        #ffffff 10px
+      );
   }
 
   @media (min-width: $tablet-width) {
@@ -225,11 +242,12 @@
 
       right: -20px;
 
-      mask-image: radial-gradient(
-      circle 20px at 100% 0,
-      transparent 19.3px,
-      #ffffff 20px
-    );
+      mask-image:
+        radial-gradient(
+          circle 20px at 100% 0,
+          transparent 19.3px,
+          #ffffff 20px
+        );
     }
   }
 
@@ -267,7 +285,7 @@
 
   @media (min-width: $desktop-width) {
     width: 968px;
-    padding: 40px 50px 30px 50px;
+    padding: 40px 50px 30px;
 
     font-size: 54px;
     line-height: 62px;
@@ -282,7 +300,7 @@
     gap: 30px;
 
     width: 593px;
-    padding: 0 40px 35px 40px;
+    padding: 0 40px 35px;
 
     background-color: #ffffff;
 
@@ -301,11 +319,12 @@
 
       background: #ffffff;
 
-      mask-image: radial-gradient(
-        circle 26px at 100% 100%,
-        transparent 25.5px,
-        #ffffff 26px
-      );
+      mask-image:
+        radial-gradient(
+          circle 26px at 100% 100%,
+          transparent 25.5px,
+          #ffffff 26px
+        );
     }
   }
 
@@ -313,7 +332,7 @@
     align-items: center;
 
     width: 775px;
-    padding: 0 50px 35px 50px;
+    padding: 0 50px 35px;
   }
 }
 
@@ -322,7 +341,7 @@
 
   width: 267px;
   margin: 0;
-  padding: 0 14px 15px 14px;
+  padding: 0 14px 15px;
 
   font-size: 16px;
   line-height: 20px;
@@ -344,11 +363,12 @@
 
     background: #ffffff;
 
-    mask-image: radial-gradient(
-      circle 8px at 100% 100%,
-      transparent 9.5px,
-      #ffffff 10px
-    );
+    mask-image:
+      radial-gradient(
+        circle 8px at 100% 100%,
+        transparent 9.5px,
+        #ffffff 10px
+      );
   }
 
   @media (min-width: $tablet-width) {
@@ -391,11 +411,12 @@
 
     background: #ffffff;
 
-    mask-image: radial-gradient(
-      circle 8px at 100% 100%,
-      transparent 9.5px,
-      #ffffff 10px
-    );
+    mask-image:
+      radial-gradient(
+        circle 8px at 100% 100%,
+        transparent 9.5px,
+        #ffffff 10px
+      );
   }
 
   @media (min-width: $tablet-width) {
@@ -437,7 +458,7 @@
 
   &:hover {
     box-shadow: inset 0 0 0 2px #ffffff;
-    background-color: rgba(49, 109, 194, 0.7);
+    background-color: rgb(49, 109, 194, 0.7);
   }
 
   &:focus-visible {
