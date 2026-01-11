@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import'./nav.js';
 import './modal.js';
 
 const heroSwiper = new Swiper('.hero__swiper', {

@@ -11,11 +11,46 @@
   <body class="page__body">
     <header class="main-header">
       <img class="main-header__logo" src="/__spritemap#sprite-logotype-view" width="52" height="52" alt="Логотип">
-      <span class="main-header__nav" tabindex="0">
-        Меню
-        <button class="main-header__nav-button" type="button"><span class="visually-hidden">Открыть меню навигации</span></button>
-      </span>
 
+      <div class="main-header__nav-wrapper">
+        <button class="main-header__nav-button" type="button">
+          <span class="main-header__button-text">Меню</span>
+        </button>
+
+        <nav class="main-header__nav">
+
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">О проекте</a></li>
+
+            <li class="main-header__nav-item">
+              <button class="main-header__submenu-button" type="button">
+                Программы
+              </button>
+              <ul class="main-header__submenu">
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Стажировки</a></li>
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Волонтёрство</a></li>
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Учёба</a></li>
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Религия</a></li>
+              </ul>
+            </li>
+
+            <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">Как поехать</a></li>
+            <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">Отзывы</a></li>
+
+            <li class="main-header__nav-item">
+              <button class="main-header__submenu-button" type="button">
+                Новости
+              </button>
+              <ul class="main-header__submenu">
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Статьи</a></li>
+                <li class="main-header__submenu-item"><a class="main-header__nav-link" href="#">Анонсы</a></li>
+              </ul>
+            </li>
+
+            <li class="main-header__nav-item"><a class="main-header__nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -110,6 +145,8 @@
     <footer class="main-footer" data-test="footer">
       footer
     </footer>
+
+    <div class="menu-overlay" hidden></div>
 
     <div class="modal-overlay" hidden>
       <div class="modal" aria-modal="true">

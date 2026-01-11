@@ -1,10 +1,8 @@
-.modal-overlay {
+.menu-overlay {
   position: fixed;
   inset: 0;
   background: rgba(13, 29, 51, 0.4);
-  display: grid;
-  place-items: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 .modal-overlay[hidden] {
