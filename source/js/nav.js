@@ -14,13 +14,6 @@ menuToggle.addEventListener('click', () => {
   menuOverlay.toggleAttribute('hidden');
 });
 
-submenuToggles.forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    const parent = toggle.closest('.has-submenu');
-    parent.classList.toggle('open');
-  });
-});
-
 menuOverlay.addEventListener('click', (evt) => {
   if (evt.target === menuOverlay) {
     closeNav();
@@ -28,7 +21,23 @@ menuOverlay.addEventListener('click', (evt) => {
 });
 
 submenuButtons.forEach(button => {
+  const submenu = button.nextElementSibling;
+  const links = submenu.querySelectorAll('a');
+  let isOpen = false;
+
+  links.forEach(link => { link.setAttribute('tabindex', '-1')});
+
   button.addEventListener('click', () => {
-    button.nextElementSibling.classList.toggle('main-header__submenu--is-opened');
+    submenu.classList.toggle('main-header__submenu--is-opened');
+
+    links.forEach(link => {
+      if (!isOpen) {
+        link.removeAttribute('tabindex');
+      } else {
+        link.setAttribute('tabindex', '-1');
+      }
+    });
+
+    isOpen = !isOpen;
   });
 });

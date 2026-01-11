@@ -1,9 +1,11 @@
 .cite-button {
+  position: relative;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  padding: 4px 4px 4px 21px;
+  min-height: 44px;
+  padding: 4px 39px 4px 21px;
 
   background-color: transparent;
   border: 1px solid $accent-color;
@@ -18,33 +20,84 @@
   text-decoration: none;
   color: $accent-color;
 
+  transition: all 0.3s ease-in-out;
 
+  &::before,
   &::after {
     content: "";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
 
     display: block;
-    flex-shrink: 0;
     width: 34px;
     height: 34px;
+  }
 
+  &::before {
+    z-index: 2;
+
+    background-color: #ffffff;
+    mask-image: url('/__spritemap#sprite-arrow-view');
+    mask-size: 8px 8px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &::after {
     background-color: $accent-color;
 
     border-radius: 50%;
+  }
 
-    background-image: url('/__spritemap#sprite-arrow-view');
-    background-size: 8px 8px;
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover {
+    background-color: $accent-color;
+    color: $dark-bg-text-color;
+  }
+
+  &:hover.cite-button::before {
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: center;
+    background-color: $accent-color;
   }
 
   &:hover.cite-button::after {
-    transform: rotate(45deg)
+    background-color: #ffffff;
+    color: $accent-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:active.cite-button::before {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    color: #a9adb7;
+    border: 1px solid #a9adb7;
+
+    pointer-events: none;
+  }
+
+  &:disabled.cite-button::before {
+    opacity: 0.6;
+  }
+
+  &:disabled.cite-button::after {
+    background-color: #a9adb7;
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 56px;
+    padding-right: 51px;
+
     font-size: 14px;
     line-height: 14px;
 
+    &::before,
     &::after {
       width: 46px;
       height: 46px;
