@@ -1,0 +1,201 @@
+.grant {
+  padding: 70px 15px;
+
+  color: $dark-bg-text-color;
+  background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 498px);
+    justify-content: center;
+    gap: 138px;
+
+    padding: 120px 206px 120px 100px;
+  }
+}
+
+.grant__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.grant__title + p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 498px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
+}
+
+.grant__image-wrapper {
+  display: block;
+  width: 290px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  background-image: url(../../img/grant/grant-image-mobile.png);
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    height: 375px;
+    margin-bottom: 40px;
+
+    background-image: url(../../img/grant/grant-image-tablet.png);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 498px;
+    height: 363px;
+
+    background-image: url(../../img/grant/grant-image-desktop.png);
+  }
+}
+
+.grant__list-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-left: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.grant__list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+
+  list-style-type: none;
+  counter-reset: item;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    gap: 25px 48px;
+
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+
+    max-width: 498px;
+  }
+}
+
+.grant__list-item {
+  position: relative;
+  min-width: 275px;
+  max-width: 90%;
+  padding: 24px 25px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $background-color;
+
+  border: 1px solid $background-color;
+  border-radius: 16px;
+
+  &::before {
+    counter-increment: item;
+    content: counter(item);
+
+    position: absolute;
+    left: -16px;
+    top: -5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    background-color: $accent-color;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 305px;
+    padding: 30px 41px 30px 25px;
+
+    font-size: 16px;
+
+    &::before {
+      left: -26px;
+      top: -15px;
+
+      width: 42px;
+      height: 42px;
+
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 25px;
+
+    line-height: 26px;
+  }
+}
