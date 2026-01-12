@@ -85,6 +85,8 @@
   line-height: 18px;
   color: $accent-color;
 
+  cursor: pointer;
+
   &::after {
     content: "";
 
