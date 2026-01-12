@@ -364,6 +364,37 @@
           </div>
         </details>
       </section>
+
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__text-info-wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__contacts-wrapper">
+            <div class="contacts__group">
+              <p class="contacts__label">Центральный офис</p>
+              <p class="contacts__contact">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+            </div>
+
+            <div class="contacts__group">
+              <p class="contacts__label">Телефон</p>
+              <p class="contacts__contact"><a class="contacts__link" href="tel:+796387687676">+7 963 876 876 76</a></p>
+            </div>
+
+            <div class="contacts__group">
+              <p class="contacts__label">Email</p>
+              <p class="contacts__contact"><a class="contacts__link" href="mailto:info@stazh.ru">Info@stazh.ru</a></p>
+            </div>
+          </address>
+        </div>
+
+        <picture>
+          <source width="1240" height="486" type="image/webp" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+          <source width="678" height="500" type="image/webp" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+          <source width="290" height="240" type="image/webp" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+          <source width="1240" height="486" type="image/png" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.png 1x, img/contacts/map-desktop@2x.png 2x">
+          <source width="678" height="500" type="image/png" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.png 1x, img/contacts/map-tablet@2x.png 2x">
+          <img class="contacts__map-static" width="290" height="240" src="img/contacts/map-mobile@1x.png" srcset="img/contacts/map-mobile@2x.png 2x" alt="Месторасположение нашей организации." loading="lazy">
+        </picture>
+      </section>
     </main>
 
     <footer class="main-footer" data-test="footer">
