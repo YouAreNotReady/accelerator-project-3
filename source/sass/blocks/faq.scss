@@ -1,0 +1,153 @@
+.faq {
+  padding: 50px 15px;
+
+  background-color: $background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 206px;
+  }
+}
+
+.faq__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 9px;
+    margin-bottom: 60px;
+
+    font-size: 50px;
+  }
+}
+
+.faq__item {
+  transition: all 0.3s ease-in-out;
+
+  border-radius: 14px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 16px;
+  }
+}
+
+.faq__item[open] {
+  background-color: $accent-color;
+  color: $dark-bg-text-color;
+}
+
+.faq__item[open] .faq__question {
+  padding-bottom: 17px;
+
+  color: $dark-bg-text-color;
+}
+
+.faq__item[open] .faq__question::after {
+  background-color: #ffffff;
+
+  background-image: url("/__spritemap#sprite-minus-view");
+}
+
+.faq__item + .faq__item {
+  margin-top: 10px;
+}
+
+.faq__question {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+
+  list-style: none;
+
+  border: 2px solid $accent-color;
+  border-radius: 14px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $accent-color;
+
+  &::after {
+    content: "";
+
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: $accent-color;
+    color: $dark-bg-text-color;
+
+    background-image: url("/__spritemap#sprite-plus-view");
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+
+    font-size: 22px;
+    line-height: 26px;
+
+    border-radius: 16px;
+
+    &::after {
+      align-self: flex-start;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+    padding: 40px;
+
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.faq__answer {
+  padding: 1px 17px;
+  padding-bottom: 22px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px;
+    padding-top: 1px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px;
+    padding-top: 1px;
+
+    line-height: 26px;
+  }
+}
+
+.faq__answer p {
+  margin: 0;
+}
